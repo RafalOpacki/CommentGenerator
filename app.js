@@ -7,7 +7,7 @@ const commentRoutes = require('./routes/comment/comment.routes');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 mongoose.connect(
   process.env.CONNECTION_STRING,
