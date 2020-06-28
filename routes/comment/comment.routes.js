@@ -5,8 +5,8 @@ const router = express.Router();
 
 // GET
 router.get('/', commentController.getAllComments);
-router.get('/:commentId', commentController.getComment);
 router.get('/random', commentController.generateRandom);
+router.get('/:commentId', commentController.getComment);
 
 // POST
 router.post('/', commentController.createComment);
